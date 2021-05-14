@@ -22,7 +22,7 @@ function App() {
           	 let cleanDate = d.toLocaleTimeString()
           
         
-          if(cleanDate != lastFetched) {
+          if(cleanDate !== lastFetched) {
           	console.log("New Price Update")
             dt[0].data.push({x: cleanDate, y: resData.dogecoin.usd})
             setData(dt)
